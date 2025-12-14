@@ -80,8 +80,8 @@ function display() {
     stroke(0,0,0); // If more lines are drawn elsewhere make sure the default is black
     strokeWeight(0);
   
-    drawText("Click this screen first!",0.35*width,0.8*height);
-    drawText("then move the arrow keys!",0.32*width,0.75*height);
+    //drawText("Click this screen first!",0.35*width,0.8*height);
+    //drawText("then move the arrow keys!",0.32*width,0.75*height);
 }
 
 function wrapEdges() {
