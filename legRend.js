@@ -1,3 +1,7 @@
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+
 function loadImage(dataUrl) {
     return new Promise((resolve, reject) => {
         const img = new Image();
@@ -279,7 +283,7 @@ export class Skin {
         URL.revokeObjectURL(url);
     }
 
-    async draw(ctx, radius = 100, offsetX = 0, offsetY = 0, scale = 1) {
+    async draw(actx, radius = 100, offsetX = 0, offsetY = 0, scale = 1) {
         const off = Skin.offScreenCanvas;
         off.width = ctx.canvas.width;
         off.height = ctx.canvas.height;
@@ -516,3 +520,7 @@ export class Skin {
         return skin;
     }
 }
+
+
+const skin = Skin.fromJSON({"layers":[{"id":84,"scale":0.25,"angle":48,"x":17.14285659790039,"y":-5.857142925262451,"flipX":false,"flipY":false,"color":16777215},{"id":84,"scale":0.25,"angle":0,"x":1.1428570747375488,"y":-17.571430206298828,"flipX":false,"flipY":false,"color":16777215},{"id":26,"scale":0.5799999833106995,"angle":175,"x":-4,"y":-11.714285850524902,"flipX":false,"flipY":false,"color":13239570},{"id":13,"scale":0.17000000178813934,"angle":0,"x":9.142857551574707,"y":7.857142925262451,"flipX":false,"flipY":false,"color":16777215},{"id":26,"scale":0.4000000059604645,"angle":74,"x":10,"y":-3,"flipX":false,"flipY":false,"color":13239571},{"id":99,"scale":0.11999999731779099,"angle":122,"x":-1.8571428060531616,"y":-4.857142925262451,"flipX":false,"flipY":false,"color":16777215},{"id":23,"scale":0.6000000238418579,"angle":80,"x":-1.7142857313156128,"y":-10.571428298950195,"flipX":false,"flipY":false,"color":16777215},{"id":99,"scale":0.1599999964237213,"angle":141,"x":-7.285714626312256,"y":-7.857142448425293,"flipX":false,"flipY":false,"color":16777215},{"id":99,"scale":0.1850000023841858,"angle":90,"x":5.142857074737549,"y":-8.742856979370117,"flipX":false,"flipY":false,"color":16777215}],"bc":4492031});
+skin.draw();
