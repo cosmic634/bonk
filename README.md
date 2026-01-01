@@ -1,1 +1,23 @@
-https://cosmic634.github.io/bonk/
+TODO:
+    Add/Features
+    Make conversion from json to other
+
+    Renderer:
+            My (cosRend)
+                Renderer fix image loading
+                Is it better to have a rect for colour over shape or just colour entire canvas? consider compute
+        Consider making renderer with elements or canvas or svg element
+        ?????all three says to make renderer also not need to refresh and auto gen canvas
+        Benchmark diff solutions
+        Rencode svgs from https://bonk.io/GameResources.js
+
+    Wiki:
+        Ask everyone for any code they have relating to bonk or for any problem and catalog
+
+    UI:
+        learn how to bang out layout quick and bypass weird quirks eg image in div with text/emojis moving everything up or down etc
+                                                                   eg wraping entire thing in div for pos but things moving slightly
+        ai? and branching to make sure same or similar
+        ai and carry style sheet from one to another
+        learn to quickly dupe simple website eg namemc
+        ???plan layout
