@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skin Viewer • Bonk-style</title>
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --panel: #141826;
+      --card: #1b2040;
+      --accent: #7aa2ff;
+      --text: #e6e8f0;
+      --muted: #9aa0b5;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: radial-gradient(circle at top, #111633, var(--bg));
+      color: var(--text);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11,13,18,.9);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #1c2140;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: .4px;
+      color: var(--accent);
+    }
+
+    .back {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 30px;
+    }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+    }
+
+    .viewer {
+      background: linear-gradient(160deg, var(--card), #12163a);
+      border-radius: 18px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,.4);
+    }
+
+    .skin-preview {
+      width: 240px;
+      height: 240px;
+      margin: 10px auto 20px;
+      border-radius: 50%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 0 40px rgba(0,0,0,.7);
+    }
+
+    .skin-preview img {
+      max-width: 85%;
+      max-height: 85%;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    button {
+      background: var(--accent);
+      border: none;
+      color: #0b0d12;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid #2b3270;
+    }
+
+    .info {
+      background: var(--panel);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .author {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      background: #0f1330;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      background: #20256a;
+      color: #cbd1ff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 160px;
+      resize: none;
+      background: #0b0f2a;
+      color: #dce0ff;
+      border: 1px solid #262c6d;
+      border-radius: 14px;
+      padding: 14px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">BONKSKINS</div>
+    <a class="back" href="index.html">← Back to skins</a>
+  </div>
+</header>
+
+<main>
+  <section class="viewer">
+    <div class="skin-preview">
+      <!-- Replace with real skin render -->
+      <img src="skin-placeholder.png" alt="Bonk Skin" />
+    </div>
+    <div class="actions">
+      <button>Copy JSON</button>
+      <button class="secondary">Download</button>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="title">Cool Smiley Skin</div>
+    <div class="author">by Player123</div>
+
+    <div class="stats">
+      <div class="stat">👍 128</div>
+      <div class="stat">⭐ 4.8</div>
+      <div class="stat">⬇ 532</div>
+      <div class="stat">🕒 Jan 2025</div>
+    </div>
+
+    <div class="tags">
+      <div class="tag">smiley</div>
+      <div class="tag">face</div>
+      <div class="tag">simple</div>
+      <div class="tag">clean</div>
+    </div>
+
+    <h3>Skin JSON</h3>
+    <textarea readonly>
+{
+  "layers": [
+    { "id": 39, "x": 0, "y": 0, "scale": 0.3, "color": 16776960 }
+  ]
+}
+    </textarea>
+  </section>
+</main>
+
+</body>
+</html>
