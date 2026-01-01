@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bonk Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #0f1117;
+      --panel: #161a22;
+      --accent: #ff9f1c;
+      --text: #eaeaf0;
+      --muted: #9aa0b4;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: linear-gradient(135deg, #1b1f2b, #11131a);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 10px auto 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      background: var(--panel);
+      padding: 14px;
+      border-bottom: 1px solid #222636;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      opacity: 0.85;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: 14px;
+      padding: 24px;
+      border: 1px solid #222636;
+      cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    /* FEATURED SKINS */
+    .skins {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .skin-card {
+      background: var(--panel);
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+      border: 1px solid #222636;
+      cursor: pointer;
+    }
+
+    .skin-card:hover {
+      border-color: var(--accent);
+    }
+
+    .skin-preview {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      position: relative;
+    }
+
+    /* Sample skins */
+    .skin-1 {
+      background: radial-gradient(circle at 30% 30%, #fff, #ffd166);
+    }
+
+    .skin-2 {
+      background: radial-gradient(circle at 30% 30%, #fff, #ef476f);
+    }
+
+    .skin-3 {
+      background: radial-gradient(circle at 30% 30%, #fff, #06d6a0);
+    }
+
+    .skin-4 {
+      background: radial-gradient(circle at 30% 30%, #fff, #118ab2);
+    }
+
+    .skin-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .skin-author {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bonk Hub</h1>
+    <p>A community-driven hub for Bonk.io skins and creators.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="skins.html">Skins</a>
+    <a href="#">Upload</a>
+    <a href="#">Stats</a>
+  </nav>
+
+  <main>
+    <h2>Explore</h2>
+    <div class="grid">
+      <div class="card" onclick="location.href='skins.html'">
+        <h3>🎨 Browse Skins</h3>
+        <p>Explore community-made Bonk.io skins.</p>
+      </div>
+      <div class="card">
+        <h3>⬆ Upload</h3>
+        <p>Share your own creations.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Stats</h3>
+        <p>View player leaderboards.</p>
+      </div>
+    </div>
+
+    <h2>Featured Skins</h2>
+    <div class="skins">
+      <div class="skin-card">
+        <div class="skin-preview skin-1"></div>
+        <div class="skin-name">Sunny Smile</div>
+        <div class="skin-author">by PixelFox</div>
+      </div>
+
+      <div class="skin-card">
+        <div class="skin-preview skin-2"></div>
+        <div class="skin-name">Crimson Core</div>
+        <div class="skin-author">by Void</div>
+      </div>
+
+      <div class="skin-card">
+        <div class="skin-preview skin-3"></div>
+        <div class="skin-name">Mint Bounce</div>
+        <div class="skin-author">by Aero</div>
+      </div>
+
+      <div class="skin-card">
+        <div class="skin-preview skin-4"></div>
+        <div class="skin-name">Ocean Roll</div>
+        <div class="skin-author">by Nova</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Not affiliated with Bonk.io • Community project
+  </footer>
+
+</body>
+</html>

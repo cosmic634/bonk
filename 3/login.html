@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login • Bonk Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    background: #0f1117;
+    color: #eaeaf0;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .box {
+    background: #161a22;
+    padding: 32px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 380px;
+    border: 1px solid #222636;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #0f1117;
+    color: #fff;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #ff9f1c;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+
+  .hint {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    color: #9aa0b4;
+  }
+</style>
+</head>
+<body>
+
+<div class="box">
+  <h1>Login</h1>
+  <input id="username" placeholder="Username">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Enter</button>
+  <div class="hint">Demo login — stored locally</div>
+</div>
+
+<script>
+function login() {
+  const user = document.getElementById("username").value.trim();
+  const pass = document.getElementById("password").value;
+
+  if (!user || !pass) {
+    alert("Enter a username and password");
+    return;
+  }
+
+  localStorage.setItem("bonkUser", JSON.stringify({
+    username: user,
+    joined: new Date().toISOString(),
+    skins: 0
+  }));
+
+  window.location.href = "profile.html";
+}
+</script>
+
+</body>
+</html>
