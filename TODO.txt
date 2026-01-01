@@ -1,6 +1,8 @@
 TODO:
     Add/Features
     Make conversion from json to other
+    Consider compressing skin data either by just lessoning the length eg from flipX to just x etc or by actualy compressing the data or any other method
+    COnsider adding relivent site data to the skin eg author etc
 
     Renderer:
             My (cosRend)
