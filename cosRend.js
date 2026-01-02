@@ -1,9 +1,7 @@
-
 //note x left is negative and y up is negative on bonk.io
 //let X = 10*jX+150;
 //let Y = 10*jY+150;
 //colour = "#"+colour.toString(16).padStart(6, '0');
-let skin = {"layers":[{"id":85,"scale":0.2997290790081024,"angle":22.29430389404297,"x":-3.1639695167541504,"y":10.386333465576172,"flipX":false,"flipY":false,"color":15658734},{"id":39,"scale":0.5255247354507446,"angle":284.665283203125,"x":-0.6857143044471741,"y":-0.6000000238418579,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.18998463451862335,"angle":13.182247161865234,"x":1.0714285373687744,"y":-0.2142857164144516,"flipX":false,"flipY":false,"color":0},{"id":39,"scale":0.10175923258066177,"angle":10.797874450683594,"x":-4.842857360839844,"y":2.4000000953674316,"flipX":false,"flipY":false,"color":0},{"id":13,"scale":0.1439940333366394,"angle":23.955881118774414,"x":-0.04285714402794838,"y":1.1571428775787354,"flipX":false,"flipY":false,"color":0},{"id":13,"scale":0.14027035236358643,"angle":33.048885345458984,"x":0.7285714149475098,"y":-1.9285714626312256,"flipX":false,"flipY":false,"color":0},{"id":72,"scale":0.029541494324803352,"angle":288.9283142089844,"x":-6.514285564422607,"y":-1.2428570985794067,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.1601993590593338,"angle":19.441593170166016,"x":-6.814285755157471,"y":-0.4285714328289032,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.15563416481018066,"angle":17.381160736083984,"x":-6.257143020629883,"y":-2.0142858028411865,"flipX":false,"flipY":false,"color":0},{"id":85,"scale":0.10154851526021957,"angle":14.232507705688477,"x":-6.557142734527588,"y":-1.8428571224212646,"flipX":false,"flipY":false,"color":15658734},{"id":23,"scale":0.33646392822265625,"angle":-29.77326011657715,"x":-5.914285659790039,"y":4.5428571701049805,"flipX":false,"flipY":false,"color":15658734},{"id":112,"scale":0.3049778342247009,"angle":159.56689453125,"x":-4.114285945892334,"y":13.414285659790039,"flipX":false,"flipY":false,"color":15658734},{"id":13,"scale":0.4467020034790039,"angle":-0.9097957611083984,"x":-2.828571319580078,"y":2.1857142448425293,"flipX":false,"flipY":false,"color":15658734},{"id":26,"scale":0.3302859663963318,"angle":306.91815185546875,"x":3.4285714626312256,"y":-3.085714340209961,"flipX":false,"flipY":true,"color":15658734},{"id":26,"scale":0.2954863905906677,"angle":251.16754150390625,"x":-5.27142858505249,"y":-3.9857141971588135,"flipX":false,"flipY":false,"color":15658734},{"id":13,"scale":0.47808605432510376,"angle":-1.9961745738983154,"x":-1.0285714864730835,"y":0.6428571343421936,"flipX":false,"flipY":false,"color":15658734}],"bc":460578};
 const skinShapes = [
 "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaGVpZ2h0PSIxMDAuMHB4IiB3aWR0aD0iNzIuOTVweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEuMCwgMC4wLCAwLjAsIDEuMCwgMzYuNDUsIDUwLjApIj4gICAgPHBhdGggZD0iTS0yNC4xIC00MC43IFEtMTQuOTUgLTQ5LjcgMC4yIC01MC4wIDE1LjAgLTUwLjMgMjUuMSAtNDAuODUgMzUuNjUgLTMwLjk1IDM2LjI1IC0xNC44IDM3LjA1IDMuMCAzNS4zNSAxMC4xIDMzLjIgMTkuMDUgMjMuODUgMzEuMyAxNS44NSA0Mi4wIDExLjQgNDUuNzUgNi40IDQ5Ljg1IDAuNyA1MC4wIC00Ljk1IDUwLjEgLTEyLjA1IDQzLjcgLTE4LjM1IDM4LjAgLTI1LjMgMjcuNjUgLTQwLjIgNS4xNSAtMzUuMiAtMTguNjUgLTMyLjIgLTMyLjc1IC0yNC4xIC00MC43IE00LjYgMjcuNDUgUTE0LjE1IDI3LjIgMjIuMTUgMjEuNSAzMi4yIDE0LjM1IDMzLjA1IDEuNyAyNy41IDEuNzUgMjEuMTUgNS4wIDguNTUgMTEuNSA0LjYgMjcuNDUgTS0zMS4xNSAxLjcgUS0zMC4zIDE0LjM1IC0yMC4yNSAyMS41IC0xMi4yNSAyNy4yIC0yLjcgMjcuNDUgLTYuNjUgMTEuNSAtMTkuMjUgNS4wIC0yMy4zIDMuMCAtMjcuNiAyLjE1IEwtMzEuMTUgMS43IiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0ibm9uZSIvPiAgPC9nPjwvc3ZnPg==",
 "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaGVpZ2h0PSIxMDAuMHB4IiB3aWR0aD0iNTMuNnB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPiAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMS4wLCAwLjAsIDAuMCwgMS4wLCAxOS44LCA1MC4wKSI+ICAgIDxwYXRoIGQ9Ik0xNi40IC0zNC45IEwxMi44NSAtMzQuNiBROC45IC0zMy44IDYuNiAtMzEuMyA0LjM1IC0yOC43IDMuOTUgLTI0LjkgMy43NSAtMjMuMCA0LjAgLTIxLjYgTDcuMTUgLTIyLjI1IFExMC43NSAtMjMuNiAxMy4zNSAtMjYuNiAxNS45IC0yOS42IDE2LjQgLTMyLjU1IEwxNi40IC0zNC45IE0tMTQuNzUgLTMxLjI1IFEtMTMuODUgLTI3LjggLTExLjY1IC0yNS45NSAtOC4wIC0yMy4wIC0yLjY1IC0yMS40IC0yLjQ1IC0yMy4xIC0yLjY1IC0yNS4yIC0zLjE1IC0yOS4zNSAtNS40NSAtMzEuNCAtNy42NSAtMzMuNDUgLTExLjcgLTM0LjEgTC0xNS4yNSAtMzQuMzUgLTE0Ljc1IC0zMS4yNSBNLTEuOSAtNDkuOSBRNS40NSAtNTAuNyAxMS44NSAtNDUuNzUgMjIuMzUgLTM3LjcgMTQuMyAtMjAuOCAxMi4yIC0xNi41NSA2LjkgLTEyLjE1IDQuMjUgLTkuOSAyLjA1IC04LjYgTDMuMCAtNy4xNSBRNy4xNSAtNC4yIDEzLjM1IC01Ljg1IDE2LjMgLTYuNTUgMTguMDUgLTguNSBMMjAuNiAtMTIuMTUgUTIxLjk1IC0xNC4xNSAyMi41NSAtMTUuNSAyMy40IC0xNy41NSAyMy41IC0xOS44NSAyMy42IC0yMi4xNSAyMy4wIC0yMy40NSAyMi41IC0yNC42IDIyLjU1IC0yNC45NSBMMjMuNzUgLTI2LjMgMjQuOSAtMjcuMyAyMy43NSAtMzMuNzUgUTIzLjQgLTM1LjEgMjMuOCAtMzYuMDUgMjQuMSAtMzYuOSAyNC45IC0zNy4wIDI1LjY1IC0zNy4xNSAyNi4yIC0zNi40IDI2Ljg1IC0zNS42NSAyNi45NSAtMzMuOSBMMjcuMyAtMjguNiAyOS45IC0zNC4wNSBRMzAuMyAtMzUuMjUgMzEuMyAtMzUuODUgMzIuNCAtMzYuNDUgMzMuMiAtMzUuODUgMzMuOSAtMzUuMzUgMzMuNzUgLTM0LjI1IDMzLjU1IC0zMy4zNSAzMi44NSAtMzIuNDUgTDI4Ljg1IC0yNi41NSAyOS43IC0yNi42IDMwLjk1IC0yNi4zIFEzMy41NSAtMjMuNyAzMy40NSAtMjIuNiAzMy4zIC0yMS41NSAzMi40IC0yMC4yIDMxLjQgLTE4LjY1IDI5Ljk1IC0xNy44IDI4LjE1IC0xNi44IDI3LjQ1IC0xNi4xIDI2LjUgLTE1LjIgMjUuMDUgLTEyLjUgTDIxLjggLTYuNjUgUTE5LjYgLTMuNiAxNi40IC0yLjY1IEwxMS43NSAtMS4zIFExMC4zNSAtMC43NSA5LjggMC41IEwxMC4wNSAyLjM1IFExMS40NSAxMC4yNSA5LjkgMTcuNDUgTDguMDUgMjIuNDUgUTYuNyAyNi4wIDYuNCAzMS4yNSA1Ljk1IDM3LjEgNi4yNSA0My4zNSA5LjM1IDQzLjU1IDEzLjM1IDQ1LjEgMTguMiA0Ny4xIDIwLjAgNDkuNzUgMTMuNDUgNTAuMCA5LjQgNDkuODUgMS45IDQ5LjYgMC4wNSA0Ny42NSAtMi4zIDQ5LjkgLTkuOSA1MC4wIEwtMTkuOCA0OS42IFEtMTkuNDUgNDYuMzUgLTEyLjYgNDQuNiAtOS4xNSA0My44IC01Ljg1IDQzLjU1IEwtNi40NSAzMy4yIFEtNi43NSAyNi43NSAtNy43IDI0LjQgLTguMyAyMy4wNSAtMTEuMjUgMTkuOCAtMTMuNTUgMTcuNCAtMTMuNyAxMC45NSAtMTMuNzUgNi40IC0xMi45NSAyLjQgLTEyLjMgLTAuNDUgLTExLjUgLTEuNiAtMTAuMzUgLTMuMzUgLTcuMzUgLTQuNiAtNC42IC01Ljg1IC0zLjEgLTcuNDUgTC0yLjA1IC04Ljg1IC00LjkgLTExLjM1IFEtOC41IC0xNC45IC0xMi4zNSAtMTkuOSAtMTYuNzUgLTI1LjY1IC0xNi42IC0zMy4wNSAtMTYuNSAtNDAuMSAtMTIuNiAtNDQuNTUgLTguNSAtNDkuMTUgLTEuOSAtNDkuOSIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9Im5vbmUiLz4gIDwvZz48L3N2Zz4=",
@@ -122,23 +120,6 @@ const skinShapes = [
 "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaGVpZ2h0PSI2MS4ycHgiIHdpZHRoPSIxMDAuMDVweCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxnIHRyYW5zZm9ybT0ibWF0cml4KDEuMCwgMC4wLCAwLjAsIDEuMCwgNTAuMCwgMzAuNikiPiAgICA8cGF0aCBkPSJNMjAuMjUgLTE3LjIgUTIxLjQ1IC0yMC4zIDI1LjE1IC0yMS43NSAzMS4zNSAtMjQuMDUgMzYuODUgLTIxLjA1IDMxLjYgLTI0LjggMjQuNzUgLTI0LjY1IDE5LjY1IC0yNC41NSAxNi45NSAtMjEuNTUgMTQuMSAtMTguNTUgMTQuMSAtMTIuNzUgMTQuMSAtNC43IDIwLjA1IC0zLjUgMjIuMTUgLTIuOTUgMjMuODUgLTQuNTUgMjUuNjUgLTYuMzUgMjMuNzUgLTguNiAyMi4wIC05LjU1IDIxLjA1IC0xMS4wIDE5LjAgLTE0LjAgMjAuMjUgLTE3LjIgTTQzLjYgLTEzLjEgUTQxLjU1IC0xNy4xIDM4LjQgLTE5LjggMzUuMTUgLTIxLjk1IDMyLjIgLTIyLjAgTDI2LjI1IC0yMS4zIFEyMy42IC0yMC40IDIyLjM1IC0xOC41NSAyMS4wIC0xNi41NSAyMS43NSAtMTMuOTUgMjIuMjUgLTEyLjA1IDI1LjU1IC05Ljc1IDI4Ljc1IC03LjQ1IDI5LjE1IC01LjQgTDI5LjI1IC00LjQ1IFEyOS41NSAtMy4zIDI5LjQgLTIuMCAyOS4xIDEuNSAyNi40NSA0LjAgMjMuNSA2Ljg1IDE4LjkgNy4wIDEzLjAgNy4xNSA4LjYgMy41NSA0LjU1IDAuMiAyLjk1IC01LjMgMS40NSAtMTAuNzUgMi44NSAtMTYuMyA0LjQgLTIyLjE1IDkuMCAtMjYuMDUgMTYuMDUgLTMyLjA1IDI2LjYgLTMwLjE1IDM2LjQ1IC0yOC40NSA0My40IC0yMS4xNSA1MS4wIC0xMy4yIDQ5LjkgLTAuMDUgNDguODUgMTMuMjUgMzkuODUgMjAuMSAzMS45IDI2LjIgMTkuMSAyOC45IDMuOSAzMi4wIC0xNC44IDI5LjQ1IC0zMC4xIDI3LjM1IC00MS44IDI4Ljc1IEwtNTAuMCAyNy4yNSBRLTQxLjAgMjQuNjUgLTMwLjcgMjQuMSAtMjIuNjUgMjMuNyAtMTMuMDUgMjQuNTUgTDkuNDUgMjUuODUgUTIxLjI1IDI1LjUgMzAuOTUgMjEuMTUgMzguMiAxNS4zIDQwLjcgOC44IDQyLjE1IDQuOSA0MC42NSAtMC4xNSAzOS4yNSAtNC40NSAzNi43NSAtNi44IEwzOS4wIC0wLjc1IFE0MC4wNSAzLjk1IDM4LjQ1IDguMCAzNy4zNSAxMC44IDM0LjU1IDEzLjcgMzEuOCAxNi41IDI4LjkgMTguMCAzMi42NSAxNC4xIDM0LjM1IDguNyAzNS45IDMuOTUgMzUuNTUgLTAuNTUgMzUuMCAtNi4xNSAzMi40NSAtMTAuMTUgTDMwLjAgLTEzLjA1IDMxLjcgLTEyLjcgUTMzLjY1IC0xMi4wNSAzNS42IC0xMC45IDQxLjY1IC03LjM1IDQzLjY1IC0xLjkgNDUuNDUgMi44NSA0NC45IDYuNjUgNDYuNiAxLjg1IDQ2LjMgLTMuMiA0NS45NSAtOC40NSA0My42IC0xMy4xIiBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZT0ibm9uZSIvPiAgPC9nPjwvc3ZnPg=="
 ];
 
-let skinLoaded = [];
-skinShapes.forEach((element) => {
-    //const temp = new image;
-    //temp.src
-});
-
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-//make circle
-ctx.beginPath();
-ctx.arc(canvas.width/2, canvas.height/2, 150, 0, Math.PI * 2);
-ctx.clip();
-//background
-//canvas.style.background = "#"+skin.bc.toString(16);
-ctx.fillStyle = "#"+skin.bc.toString(16).padStart(6, '0');
-ctx.fillRect(0, 0, canvas.width, canvas.height);
-
 function waitAndLoad(a){
     return new Promise((resolve) => {
         const image = new Image();
@@ -146,7 +127,30 @@ function waitAndLoad(a){
         image.src = skinShapes[a-1];
     });
 }
-console.log("b4");
+
+//const canvas = document.getElementById("canvas");
+//const ctx = canvas.getContext("2d");
+
+
+//const canvas = document.getElementById("canvas");
+
+async function renderSkinToCanvas(supplyedCtx, skinData){
+let skin = skinData;
+let ctx =supplyedCtx;
+let image;
+
+//make circle
+ctx.beginPath();
+ctx.arc(ctx.canvas.width/2, ctx.canvas.height/2, 150, 0, Math.PI * 2);
+ctx.clip();
+//background
+//ctx.canvas.style.background = "#"+skin.bc.toString(16);
+ctx.fillStyle = "#"+skin.bc.toString(16).padStart(6, '0');
+ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+for (let i = skin.layers.length-1 ; i >= 0; i--) {
+    image = await waitAndLoad(skin.layers[i].id);
+    draw(skin.layers[i].x, skin.layers[i].y, skin.layers[i].id, skin.layers[i].color, skin.layers[i].flipX, skin.layers[i].flipY, skin.layers[i].angle, skin.layers[i].scale)
+}
 async function draw(bX, bY, id, colour, flipX, flipY, angle, scale) {
     
     //const image = new Image();
@@ -160,10 +164,8 @@ async function draw(bX, bY, id, colour, flipX, flipY, angle, scale) {
     let cY = 0-image.height/2+10*bY+150;
 
     //initialise fake canvas
-    const offscreenCanvas = document.getElementById("can2");
-    const offCtx = can2.getContext("2d");
-    offscreenCanvas.height=canvas.height;
-    offscreenCanvas.width=canvas.width;
+    const offscreenCanvas = new OffscreenCanvas(ctx.canvas.width, ctx.canvas.height);
+    const offCtx = offscreenCanvas.getContext("2d");
 
     //rotate and flip and draw on fake canvas
     offCtx.translate(cX+image.width/2, cY+image.height/2);
@@ -191,10 +193,6 @@ async function draw(bX, bY, id, colour, flipX, flipY, angle, scale) {
 
     //draw at pos
     ctx.drawImage(offscreenCanvas, 0, 0);
-
-    };
-    let image
-    for (let i = skin.layers.length-1 ; i >= 0; i--) {
-        image = await waitAndLoad(skin.layers[i].id);
-        draw(skin.layers[i].x, skin.layers[i].y, skin.layers[i].id, skin.layers[i].color, skin.layers[i].flipX, skin.layers[i].flipY, skin.layers[i].angle, skin.layers[i].scale)
-    }
+};
+};
+export default renderSkinToCanvas;
