@@ -2,7 +2,8 @@ TODO:
     Add/Features
     Make conversion from json to other
     Consider compressing skin data either by just lessoning the length eg from flipX to just x etc or by actualy compressing the data or any other method
-    COnsider adding relivent site data to the skin eg author etc
+    Consider adding relivent site data to the skin eg author etc
+    Get a backend
 
     Renderer:
             My (cosRend)
@@ -12,6 +13,7 @@ TODO:
         ?????all three says to make renderer also not need to refresh and auto gen canvas
         Benchmark diff solutions
         Rencode svgs from https://bonk.io/GameResources.js
+        All ways to changge colour svg eg make dataurl or change fill in element or change font or construct svg file with custom fill colour
 
     Wiki:
         Ask everyone for any code they have relating to bonk or for any problem and catalog

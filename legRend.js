@@ -1,7 +1,3 @@
-const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');
-
-
 function loadImage(dataUrl) {
     return new Promise((resolve, reject) => {
         const img = new Image();
@@ -520,7 +516,3 @@ export class Skin {
         return skin;
     }
 }
-
-
-const skin = Skin.fromJSON({"layers":[{"id":85,"scale":0.2997290790081024,"angle":22.29430389404297,"x":-3.1639695167541504,"y":10.386333465576172,"flipX":false,"flipY":false,"color":15658734},{"id":39,"scale":0.5255247354507446,"angle":284.665283203125,"x":-0.6857143044471741,"y":-0.6000000238418579,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.18998463451862335,"angle":13.182247161865234,"x":1.0714285373687744,"y":-0.2142857164144516,"flipX":false,"flipY":false,"color":0},{"id":39,"scale":0.10175923258066177,"angle":10.797874450683594,"x":-4.842857360839844,"y":2.4000000953674316,"flipX":false,"flipY":false,"color":0},{"id":13,"scale":0.1439940333366394,"angle":23.955881118774414,"x":-0.04285714402794838,"y":1.1571428775787354,"flipX":false,"flipY":false,"color":0},{"id":13,"scale":0.14027035236358643,"angle":33.048885345458984,"x":0.7285714149475098,"y":-1.9285714626312256,"flipX":false,"flipY":false,"color":0},{"id":72,"scale":0.029541494324803352,"angle":288.9283142089844,"x":-6.514285564422607,"y":-1.2428570985794067,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.1601993590593338,"angle":19.441593170166016,"x":-6.814285755157471,"y":-0.4285714328289032,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.15563416481018066,"angle":17.381160736083984,"x":-6.257143020629883,"y":-2.0142858028411865,"flipX":false,"flipY":false,"color":0},{"id":85,"scale":0.10154851526021957,"angle":14.232507705688477,"x":-6.557142734527588,"y":-1.8428571224212646,"flipX":false,"flipY":false,"color":15658734},{"id":23,"scale":0.33646392822265625,"angle":-29.77326011657715,"x":-5.914285659790039,"y":4.5428571701049805,"flipX":false,"flipY":false,"color":15658734},{"id":112,"scale":0.3049778342247009,"angle":159.56689453125,"x":-4.114285945892334,"y":13.414285659790039,"flipX":false,"flipY":false,"color":15658734},{"id":13,"scale":0.4467020034790039,"angle":-0.9097957611083984,"x":-2.828571319580078,"y":2.1857142448425293,"flipX":false,"flipY":false,"color":15658734},{"id":26,"scale":0.3302859663963318,"angle":306.91815185546875,"x":3.4285714626312256,"y":-3.085714340209961,"flipX":false,"flipY":true,"color":15658734},{"id":26,"scale":0.2954863905906677,"angle":251.16754150390625,"x":-5.27142858505249,"y":-3.9857141971588135,"flipX":false,"flipY":false,"color":15658734},{"id":13,"scale":0.47808605432510376,"angle":-1.9961745738983154,"x":-1.0285714864730835,"y":0.6428571343421936,"flipX":false,"flipY":false,"color":15658734}],"bc":460578});
-skin.draw(ctx);
