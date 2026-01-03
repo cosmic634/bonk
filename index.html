@@ -291,39 +291,22 @@
   Fan‑made Bonk.io skin hub • Not affiliated with Bonk.io
 </footer>
 <script type="module">
-let dumb=1;
 import renderSkinToCanvas from "./cosRend.js";
 
 function makeThing(name, upvoteNum, skin){
-dumb++
-const subChild2Text1 = document.createElement('span');
-subChild2Text1.textContent = "by "+name ;
+  const parentElement = document.getElementById('putHere');
+  const childElement = document.createElement('div');
+  parentElement.appendChild(childElement);
 
-const subChild2Text2 = document.createElement('span');
-subChild2Text2.textContent = "▲ "+upvoteNum ;
+  childElement.classList.add('card');
+  childElement.innerHTML = '<canvas width="300" height="300" class="skin" id="2"></canvas><div class="meta"><span>name</span><span>upvote</span></div>';
+  
+  //Now add data to avoid injection
+  childElement.getElementsByTagName('span')[0].textContent = "by "+name;
+  childElement.getElementsByTagName('span')[1].textContent = "▲ "+upvoteNum;
 
-const subChild2 = document.createElement('div');
-subChild2.classList.add('meta');
-subChild2.appendChild(subChild2Text1);
-subChild2.appendChild(subChild2Text2);
-
-const subChild = document.createElement('canvas');
-subChild.width = 300;
-subChild.height = 300;
-subChild.classList.add('skin');
-subChild.setAttribute('id', dumb);
-
-const childElement = document.createElement('div');
-childElement.classList.add('card');
-childElement.appendChild(subChild);
-childElement.appendChild(subChild2);
-
-const parentElement = document.getElementById('putHere');
-parentElement.appendChild(childElement);
-//element creation done!
-
-let ctx = document.getElementById(dumb).getContext('2d');
-renderSkinToCanvas(ctx, skin);
+  let ctx = childElement.querySelector('canvas').getContext('2d');
+  renderSkinToCanvas(ctx, skin);
 }
 makeThing("Metztlin", "1", {"layers":[{"id":13,"scale":0.1445523500442505,"angle":16.27954864501953,"x":4.553668022155762,"y":3.4242959022521973,"flipX":false,"flipY":false,"color":0},{"id":39,"scale":0.39698299765586853,"angle":711.4883422851562,"x":6.060316562652588,"y":4.931844234466553,"flipX":false,"flipY":false,"color":16448250},{"id":27,"scale":0.06444107741117477,"angle":-4.112107753753662,"x":5.7698235511779785,"y":2.7150604724884033,"flipX":false,"flipY":false,"color":16448250},{"id":13,"scale":0.15345099568367004,"angle":26.287904739379883,"x":-2.6319470405578613,"y":3.8002700805664062,"flipX":false,"flipY":false,"color":0},{"id":39,"scale":0.524814784526825,"angle":0.4765860438346863,"x":-4.595664978027344,"y":5.848532676696777,"flipX":false,"flipY":false,"color":16448250},{"id":27,"scale":0.07986705005168915,"angle":0.07008416950702667,"x":-4.720794200897217,"y":3.7181475162506104,"flipX":false,"flipY":false,"color":16448250},{"id":26,"scale":0.3958181142807007,"angle":159.85394287109375,"x":-0.1253308206796646,"y":6.328490257263184,"flipX":false,"flipY":false,"color":0},{"id":26,"scale":0.22296828031539917,"angle":365.216796875,"x":-2.7572779655456543,"y":11.174614906311035,"flipX":false,"flipY":false,"color":12984866},{"id":26,"scale":0.1558387726545334,"angle":366.5769958496094,"x":1.8381853103637695,"y":10.130191802978516,"flipX":false,"flipY":true,"color":12000284},{"id":35,"scale":1.2099385261535645,"angle":175.64767456054688,"x":-0.7937618494033813,"y":1.5243260860443115,"flipX":false,"flipY":false,"color":0},{"id":28,"scale":0.5841079354286194,"angle":347.50360107421875,"x":0.1671077460050583,"y":5.890548229217529,"flipX":false,"flipY":false,"color":2171169},{"id":23,"scale":0.5925887227058411,"angle":24.446378707885742,"x":2.7572779655456543,"y":2.297731637954712,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.6394765973091125,"angle":-28.43939971923828,"x":-3.3003780841827393,"y":2.297731637954712,"flipX":false,"flipY":false,"color":0},{"id":24,"scale":0.792393147945404,"angle":186.72589111328125,"x":-2.2141776084899902,"y":13.577505111694336,"flipX":false,"flipY":false,"color":0},{"id":28,"scale":0.5998116731643677,"angle":366.4447021484375,"x":-0.4595463275909424,"y":5.93232536315918,"flipX":false,"flipY":false,"color":2171169},{"id":49,"scale":0.8097404837608337,"angle":341.57904052734375,"x":-15.589642524719238,"y":21.733549118041992,"flipX":false,"flipY":false,"color":16754470}],"bc":16448250});
 makeThing("Metztlin", "1", {"layers":[{"id":84,"scale":1.0199999809265137,"angle":23,"x":-6.714285850524902,"y":-19.571428298950195,"flipX":false,"flipY":false,"color":16055033},{"id":13,"scale":0.1445523500442505,"angle":16.27954864501953,"x":4.553668022155762,"y":3.4242959022521973,"flipX":false,"flipY":false,"color":0},{"id":39,"scale":0.39698299765586853,"angle":711.4883422851562,"x":6.060316562652588,"y":4.931844234466553,"flipX":false,"flipY":false,"color":16448250},{"id":27,"scale":0.06444107741117477,"angle":-4.112107753753662,"x":5.7698235511779785,"y":2.7150604724884033,"flipX":false,"flipY":false,"color":16448250},{"id":13,"scale":0.15345099568367004,"angle":26.287904739379883,"x":-2.6319470405578613,"y":3.8002700805664062,"flipX":false,"flipY":false,"color":0},{"id":39,"scale":0.524814784526825,"angle":0.4765860438346863,"x":-4.595664978027344,"y":5.848532676696777,"flipX":false,"flipY":false,"color":16448250},{"id":27,"scale":0.07986705005168915,"angle":0.07008416950702667,"x":-4.720794200897217,"y":3.7181475162506104,"flipX":false,"flipY":false,"color":16448250},{"id":26,"scale":0.3958181142807007,"angle":159.85394287109375,"x":-0.1253308206796646,"y":6.328490257263184,"flipX":false,"flipY":false,"color":0},{"id":26,"scale":0.22296828031539917,"angle":365.216796875,"x":-2.7572779655456543,"y":11.174614906311035,"flipX":false,"flipY":false,"color":12984866},{"id":26,"scale":0.1558387726545334,"angle":366.5769958496094,"x":1.8381853103637695,"y":10.130191802978516,"flipX":false,"flipY":true,"color":12000284},{"id":35,"scale":1.2099385261535645,"angle":175.64767456054688,"x":-0.7937618494033813,"y":1.5243260860443115,"flipX":false,"flipY":false,"color":0},{"id":28,"scale":0.5841079354286194,"angle":347.50360107421875,"x":0.1671077460050583,"y":5.890548229217529,"flipX":false,"flipY":false,"color":2171169},{"id":23,"scale":0.5925887227058411,"angle":24.446378707885742,"x":2.7572779655456543,"y":2.297731637954712,"flipX":false,"flipY":false,"color":0},{"id":23,"scale":0.6394765973091125,"angle":-28.43939971923828,"x":-3.3003780841827393,"y":2.297731637954712,"flipX":false,"flipY":false,"color":0},{"id":24,"scale":0.792393147945404,"angle":186.72589111328125,"x":-2.2141776084899902,"y":13.577505111694336,"flipX":false,"flipY":false,"color":0},{"id":28,"scale":0.5998116731643677,"angle":366.4447021484375,"x":-0.4595463275909424,"y":5.93232536315918,"flipX":false,"flipY":false,"color":2171169}],"bc":9942264});
